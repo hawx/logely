@@ -5,21 +5,16 @@ Gem::Specification.new do |s|
   s.name         = "logely"
   s.author       = "Joshua Hawxwell"
   s.email        = "m@hawx.me"
-  s.summary      = "A short summary of what it does."
+  s.summary      = "Human readable logging"
   s.homepage     = "http://github.com/hawx/logely"
   s.version      = Logely::VERSION
-  
+
   s.description  = <<-DESC
-    A long form description. Nicely indented and wrapped at ~70 chars.
-    Here's a measuring line for you. (Don't keep this in when releasing.)
-    ----------------------------------------------------------------------
+    Provides nice human readable logging to the console with action words
+    in a properly spaced left column.
   DESC
-  
-  # s.add_dependency 'some-gem', '~> X.X.X'
-  # s.add_development_dependency 'some-gem', '~> X.X.X'
-  
+
   s.files        = %w(README.md Rakefile LICENCE)
-  s.files       += Dir["{bin,lib,man,test,spec}/**/*"] & `git ls-files`.split("\n")
-  s.test_files   = Dir["{test,spec}/**/*"] & `git ls-files`.split("\n")
-  s.executables  = %w(logely)
+  s.files       += Dir["{lib,spec}/**/*"] & `git ls-files`.split("\n")
+  s.test_files   = Dir["spec/**/*"] & `git ls-files`.split("\n")
 end
