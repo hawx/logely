@@ -5,13 +5,13 @@ Gem::Specification.new do |s|
   s.name         = "logely"
   s.author       = "Joshua Hawxwell"
   s.email        = "m@hawx.me"
-  s.summary      = "Human readable logging"
+  s.summary      = "Pretty logging to console"
   s.homepage     = "http://github.com/hawx/logely"
   s.version      = Logely::VERSION
 
   s.description  = <<-DESC
-    Provides nice human readable logging to the console with action words
-    in a properly spaced left column.
+    Provides pretty logging to the console with action words in a nicely
+    spaced left column, and messages on the right.
   DESC
 
   s.files        = %w(README.md Rakefile)

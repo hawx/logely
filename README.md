@@ -1,6 +1,6 @@
 # Logely
 
-Human readable logging tool.
+Pretty logging to console.
 
 ``` ruby
 require 'logely'
